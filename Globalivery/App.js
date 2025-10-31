@@ -7,23 +7,27 @@ import Navbar from './components/Navbar'
 import WelcomeScreen from './screens/WelcomeScreen';
 
 
-// export default function App() {
-//   return (
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex:1}}>
+        <NavigationContainer>
+          <Navigation />
+        </NavigationContainer>
+        <StatusBar style="auto" />
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
+};
+
+// export default function App(){
+//   return(
 //     <SafeAreaProvider>
-//       <SafeAreaView style={{flex:1}}>
-//         <NavigationContainer>
-//           <Navigation />
-//         </NavigationContainer>
-//         <StatusBar style="auto" />
-//       </SafeAreaView>
+//         <SafeAreaView style={{flex:1}}>
+//           <View>
+//           <Navbar />
+//           </View>
+//         </SafeAreaView>
 //     </SafeAreaProvider>
 //   );
 // };
-
-export default function App(){
-  return(
-    <View>
-      <WelcomeScreen />
-    </View>
-  );
-};
