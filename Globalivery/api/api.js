@@ -21,6 +21,22 @@ export async function fetchUser(params) {
     }
 }
 
-function fetchProducts (){
-    axiosApi.get()
+function fetchProducts(){
+    const productresponse = axiosApi.get('/products');
+    return productresponse.data
+}
+
+function fetchUser(){
+    const userresponse = axiosApi.get('/users');
+    return userresponse.data
+}
+
+function fetchOrders(){
+    const order = axiosApi.get('/orders');
+    return order.data
+}
+
+function fetchCategories(){
+    const categories = axiosApi.get('/categories');
+    return categories.data
 }
