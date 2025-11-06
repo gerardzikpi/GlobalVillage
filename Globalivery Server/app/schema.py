@@ -1,3 +1,3 @@
-from marshmallow import Marshmallow # type: ignore
+from flask_marshmallow import Marshmallow 
 
 marshmallow = Marshmallow()
