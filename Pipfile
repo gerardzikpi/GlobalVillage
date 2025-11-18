@@ -12,6 +12,7 @@ cors = "*"
 flask-cors = "*"
 flask-migrate = "*"
 flask-marshmallow = "*"
+flask-socketio = "*"
 
 [dev-packages]
 

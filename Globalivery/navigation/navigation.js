@@ -19,7 +19,7 @@ export default function Navigation() {
                 <Stack.Screen name="signin" component={SigninScreen} />
                 <Stack.Screen name="signup" component={SignupScreen} />
                 <Stack.Screen name="Welcome" component={WelcomeScreen} />
-                <Stack.Screen name="home" component={HomeScreen} />
+                <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="detail" component={DetailScreen} />
                 <Stack.Screen name="Notifications" component={Notifications} />
             </Stack.Navigator>

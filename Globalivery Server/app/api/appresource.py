@@ -1,7 +1,7 @@
 from flask_restful import Resource,reqparse
 from ..models import User, Product, Order, Category
 from flask import request, abort
-from app import db
+from ..models import db
 from sqlalchemy.exc import SQLAlchemyError
 
 

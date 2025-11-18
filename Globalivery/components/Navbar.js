@@ -11,7 +11,7 @@ export default function Navbar({ routes }) {
     // Allow caller to override route names via `routes` prop. Defaults chosen
     // from project screen filenames: HomeScreen, BucketlistScreen, DetailScreen, WelcomeScreen.
     const {
-        home = 'HomeScreen',
+        home = 'Home',
         cart = 'cart',
         notifications = 'Notifications',
         profile = 'Profile',
