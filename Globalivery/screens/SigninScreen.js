@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextInput, View, Text, Pressable } from 'react-native';
+import { Button, TextInput, View, Text, Pressable,StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
 
@@ -9,12 +9,12 @@ export default function SigninScreen() {
 
   // TODO: hook these TextInputs to state and perform real auth with axios.
   return (
-    <View style={{ padding: 12, justifyContent:'center', flex:1, alignSelf:'center', width:'80%' }}>
-      <TextInput placeholder="Username" style={{ marginBottom: 8, padding: 8, borderWidth: 1, borderRadius: 4 }} />
+    <View style={styleSheet.container}>
+      <TextInput placeholder="Username" style={styleSheet.input} />
       <TextInput
         placeholder="Password"
         secureTextEntry={true}
-        style={{ padding: 8, borderWidth: 1, borderRadius: 4 }}
+        style={styleSheet.input}
       />
 
       <Text style={{ flex:1 }}>
@@ -24,9 +24,35 @@ export default function SigninScreen() {
           </Pressable>
       </Text>
 
-      <View style={{ marginTop: 18 }}>
-        <Button title="Sign In" onPress={() => navigation.navigate('home')} />
+      <View style={styleSheet.button}>
+        <Button title="Sign In" onPress={() => navigation.navigate('Home')} />
       </View>
     </View>
   );
 }
+
+const styleSheet = StyleSheet.create({
+  container:{
+    width :"auto",
+    height : 50,
+    position:"absolute",
+    alignSelf:"center",
+    justifyContent:"center",
+    marginTop:18,
+    shadowOpacity:20,
+    shadowColor:"black",
+    flex:1,
+    
+  },
+  input:{
+    borderRadius:40,
+    borderColor:"black",
+    borderWidth:1,
+    margin:8,
+
+  },
+  button :{
+    backgroundColor : "dodgerBlue",
+    borderRadius : 30,
+  }
+})

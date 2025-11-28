@@ -13,8 +13,10 @@ flask-cors = "*"
 flask-migrate = "*"
 flask-marshmallow = "*"
 flask-socketio = "*"
+marshmallow-sqlalchemy = "*"
 
 [dev-packages]
+alembic = "*"
 
 [requires]
 python_version = "3.13"
